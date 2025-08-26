@@ -372,13 +372,6 @@ class OrderTransaction extends Component
         $this->showSuccessPopup = true;
 
         session()->flash('message', 'Transaksi berhasil disimpan.');
-
-        // Redirect ke invoice sesuai status
-        // if ($transaction->is_debt) {
-        //     return redirect()->route('print.struk.piutang', $transaction->id);
-        // } else {
-        //     return redirect()->route('print.struk', $transaction->id);
-        // }
     }
 
     public function printStruk($transactionId)
